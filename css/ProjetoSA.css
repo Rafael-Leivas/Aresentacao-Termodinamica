@@ -1,7 +1,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    background-image: url(mundo.jpg);
+    background-image: url(../img/mundo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: -250px;
