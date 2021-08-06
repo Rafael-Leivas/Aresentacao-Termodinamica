@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>S.A Termodinâmica</title>
+        <link rel="stylesheet" href="css/Calculadora.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="Toda">
+        <nav class="cabeçalho">
+            <div class="logo"><img src="Logo.jpeg" alt="Logo" width="30px" height="30px"></div>
+            <a href="conclusão.html">Conclusão</a>
+            <a href="Produção.html">Produção</a>
+            <a href="Calculadora.html">Calculadora</a>
+            <a href="Termodinamica.html">Termodinâmica</a>
+            <a href="ProjetoSA.html">Home</a>
+        </nav>
+
+        <h1 class="fonte">CALCULADORA</h1>
+   
+        <article class="calculadora1">
+            <h1>1ª Lei Termodinâmica</h1>
+            <div>
+                <label>Calorㅤㅤ</label>
+                <input type="number"
+                    id="q"
+                    placeholder="p. ex. 2, 3, 4...">
+            </div>
+            <div>
+                <label>Trabalho   </label>
+                <input type="number"
+                    id="w"
+                    placeholder="p. ex. 2, 3, 4...">
+            </div>
+            <div>
+                <label>Energiaㅤ</label>
+                <input type="number"
+                    id="u"
+                    placeholder="p. ex. 2, 3, 4...">
+            </div>
+            <div>
+                <button type="button" onclick="botao1()">
+                    1ª Cálculo
+                </button>
+    
+                <button type="button"onclick="botao2()">
+                    2ª Cálculo
+                </button>
+    
+                <button type="button" onclick="botao3()">
+                    3ª Cálculo
+                </button>
+            </div>
+        </nav>
+            <script>
+    
+        const botao1 = function(){
+
+                let q = parseFloat(document.getElementById('q').value)
+
+                let w = parseFloat(document.getElementById('w').value)
+    
+                let resultado = q - w
+    
+                alert(resultado)
+    
+            }
+    
+            const botao2 = function(){
+
+                let u = parseFloat(document.getElementById('u').value)
+
+                let w = parseFloat(document.getElementById('w').value)
+    
+                let resultado = u + w
+    
+                alert(resultado)
+            }
+    
+            const botao3 = function(){
+
+                let q = parseFloat(document.getElementById('q').value)
+                
+                let u = parseFloat(document.getElementById('u').value)
+    
+                let resultado = q - u
+    
+                alert(resultado)
+            }
+            
+        </script>
+
+        <article class="calculadora2">
+            <h1>Rendimento</h1>
+
+            <div>
+                <label>Q1</label>
+                <input type="number"
+                    id="q1"
+                    placeholder="p. ex. 2, 3, 4...">
+            </div>
+            <div>
+                <label>Q2</label>
+                <input type="number"
+                    id="q2"
+                    placeholder="p. ex. 2, 3, 4...">
+            </div>
+
+            <div>
+                <button type="button" onclick="botao()">
+                    Calcular
+                </button>
+            </div>
+
+            <script>
+                const botao = function(){
+
+        let x = parseFloat(document.getElementById('q1').value)
+
+        let y = parseFloat(document.getElementById('q2').value)
+
+        let resultado = (x + y) / x
+
+        alert(resultado)
+    }
+            </script>
+
+            </article>
+        </article>
+
+
+
+        </nav>
+    </body>
+    
+</html>
